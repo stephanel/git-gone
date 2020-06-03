@@ -6,7 +6,7 @@ MIT License
 
 ## Cleaning stale locale branches
 
- - Store the bash script where you want (here: C:\users\<username>\)
+ - Store the bash script ```git-gone``` where you want (here: C:\users\<username>\)
  - Edit your .bashrc file and add the path to the PATH variable:
     ```console
     export PATH=$PATH:~/

@@ -4,6 +4,7 @@ See [git gone: cleaning stale local branches](http://eed3si9n.com/git-gone-clean
 
 MIT License
 
+## Cleaning stale locale branches
 
  - Store the bash script where you want (here: C:\users\<username>\)
  - Edit your .bashrc file and add the path to the PATH variable:
@@ -15,14 +16,12 @@ MIT License
     $ git gone
     ```
 - Type the following commands to clean your local branches:
-    ```console
-    $ git gone -pn
-    (...)
-    $ git gone -d
-    ```
-- Type the following one if any branch failed to delete:
-    ```console
-    $ git gone -D
-    ```
+   ```console
+   $ git gone -pn
+   $ git gone -d
+   $ git gone -D
+   $ git branch --merged | grep -v "\*" | grep "wip/\|pr/" | xargs git branch -d
+   ```
+
 
 
